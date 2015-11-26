@@ -1,0 +1,44 @@
+{
+  "name": "gr-fileupload",
+  "version": "0.0.0",
+  "description": "File Upload Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:globalrockstar/globalrockstar-fileupload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.0.7",
+    "gm": "~1.16.0",
+    "good": "git+ssh://git@bitbucket.org:globalrockstar/good.git",
+    "gulp-install": "^0.4.0",
+    "hapi": "^6.0.0",
+    "multiparty": "~3.2.4",
+    "newrelic": "^1.10.3",
+    "node-redis-pubsub": "git+ssh://git@bitbucket.org:globalrockstar/node-redis-pubsub.git",
+    "s3-streaming-upload": "^0.1.14",
+    "seaport": "^2.0.7",
+    "slug": "~0.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jscs-stylish": "^1.1.0",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-jshint": "^1.11.0",
+    "jshint-stylish": "^2.0.0"
+  },
+  "readme": "## Getting started ##\n\nTo start the fileupload server write this command in the terminal\n **node index.js**\n\nThis will start the server at port **3002** and you can test the running server by writing **http://localhost:3002**. To change the configuration like amazon server keys or port number please see the config folder as needed.\n\n## Purpose ##\n\nThe purpose of the globalrockstar-fileupload repository  is to provide the functionality of file upload to **amazon server** and get the file from amazon server \n\n## Repository Structure ##\n\nThe code is divided in to different folder so that it become easy to under the flow of the code\n**/config : -** This folder contain the files that contain the different URL  endpoints that are used for establish connection like connection with the amazon server or to other repository  and some other configuration detail.\n\n**/routes : -**  This folder contains modules where all the routes exposed by the API server and their Handler are defined.\n\n**/controller : -** This folder contains the module whose function is to connect to aws server and upload the file to aws server\n\n## Main module in repository ##\nIn this repository there mainly two module\n* getfile\n* uploadfile\n \n## Short description of each module ##\n**getfile -** This module is used to get the file from the amazon server\n**uploadfile -** This module is used to upload the file to the amzon server\n\n## Goals ##\nTo upload and download the file from aws server",
+  "readmeFilename": "README.md",
+  "_id": "gr-fileupload@0.0.0",
+  "_shasum": "746f82e3593ed3b71d70eedc46718bc10f28781d",
+  "_resolved": "git+ssh://git@bitbucket.org:globalrockstar/globalrockstar-fileupload.git#eda491e060369bb1923171c54366278872b255da",
+  "_from": "gr-fileupload@git+ssh://git@bitbucket.org:globalrockstar/globalrockstar-fileupload.git"
+}

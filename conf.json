@@ -1,0 +1,19 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+         "dictionaries": ["jsdoc","closure"]
+    },
+        "source": {
+        "include": [ "index.js", "server.js", "newrelic.js", "controller", "routes"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true
+        }
+    }
+}
